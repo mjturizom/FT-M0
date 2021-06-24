@@ -25,7 +25,7 @@ function sumarArray(numeros, cb) {
     // Pasa el resultado a `cb`
     // No es necesario devolver nada
     //Tu código:
-    suma = 0;
+    var suma = 0;
     numeros.forEach(element => {
         suma += element;
     });
@@ -46,7 +46,7 @@ function map(array, cb) {
     // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
     // El nuevo array debe tener la misma longitud que el array del argumento
     //Tu código:
-    nuevoArray = array.map(cb);
+    var nuevoArray = array.map(cb);
     return nuevoArray;
 }
 
@@ -59,7 +59,7 @@ function filter(array) {
             return elemento;
         }
     }
-    nuevoArray = array.filter(comienzaConA);
+    var nuevoArray = array.filter(comienzaConA);
     return nuevoArray;
 }
 
